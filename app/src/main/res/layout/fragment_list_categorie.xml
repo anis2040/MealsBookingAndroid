@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    tools:context="com.esprit.booksmeals.fragment.ListCategorieFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linear_filter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circle_rose"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/filter"/>
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drawer_layout"
+        >
+
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+        <include layout="@layout/tool_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:tag="sticky"
+            android:background="@drawable/rect_white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/seachEditText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000"
+                android:hint="Search Restaurants"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+    </me.didik.component.StickyNestedScrollView>
+        <include layout="@layout/activity_drawer"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:duration="1000">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/sii"
+        android:scaleType="centerCrop"
+
+        >
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo_signin"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+
+        <com.esprit.booksmeals.customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#fff"
+            android:textSize="40dp"
+           android:layout_marginLeft="10sp"
+
+            />
+   <com.esprit.booksmeals.customfonts.MyTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="#fff"
+            android:textSize="40dp"
+           android:layout_marginLeft="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/logo_img"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        >
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+
+
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/rect_gray"
+                android:drawableStart="@drawable/ic_person_white_24dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/colorhint"
+                android:textSize="16dp"
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="282dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+
+
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:background="@drawable/rect_gray"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/colorhint"
+                android:textSize="16dp"
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="282dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent"
+            android:hint="Password"
+
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:background="@drawable/rect_gray"
+                android:drawableStart="@drawable/ic_lock_white_24dp"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="12dp"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/colortext"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:passwordToggleTint="@color/colorAccent"
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="282dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="56dp"
+
+            android:background="@color/colorPrimaryDark" />
+
+
+        <CheckBox
+            android:id="@+id/roleChbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:buttonTint="@color/colorAccent"
+            android:text="Register as a restaurant"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:visibility="invisible" />
+
+
+
+
+        <com.esprit.booksmeals.customfonts.MyTextView
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="5dp"
+            android:padding="9dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <View
+
+        android:layout_width="60dp"
+        android:layout_height="257dp"
+        android:layout_alignBottom="@+id/acc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/spoon1" />
+
+
+    <View
+
+        android:layout_width="51dp"
+        android:layout_height="280dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/fork" />
+
+
+
+    <com.esprit.booksmeals.customfonts.MyTextView
+        android:id="@+id/acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Already a member?"
+        android:layout_above="@+id/loginTv"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:lines="1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/loginTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Login Here "
+        android:textColor="#2b73e1"
+
+
+        android:textSize="15dp" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+</RelativeLayout>

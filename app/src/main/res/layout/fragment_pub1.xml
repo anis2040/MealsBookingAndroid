@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esprit.booksmeals.fragment.Pub1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/esprit"
+        android:layout_marginRight="22.3dp"
+        app:siRadius="6dp"
+        app:siBorderWidth="3dp"
+        android:scaleType="fitXY"
+        app:siSquare="true"/>
+</FrameLayout>

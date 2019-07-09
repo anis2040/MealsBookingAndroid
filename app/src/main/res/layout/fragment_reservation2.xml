@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_height="250dp"
+            android:paddingTop="50dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="14sp"
+            app:compactCalendarBackgroundColor="#fff"
+            app:compactCalendarTextColor="#a5a5a5"
+            app:compactCalendarCurrentDayTextColor="#9f3131"
+            app:compactCalendarCurrentSelectedDayTextColor="#fff"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#e92324"
+            app:compactCalendarCurrentDayBackgroundColor="#E57373"
+            app:compactCalendarMultiEventIndicatorColor="#fff" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:tabTextColor="@color/Indicator_tabTextColor"
+            android:background="@color/tabindiacator_background"
+            custom:tabSelectedTextColor="@color/Indicator_tabSelectedTextColor"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#38bffe"
+            android:letterSpacing=".08" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a5a5a5"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--recyclerview used-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:clipToPadding="false"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a5a5a5"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_spinner"
+            android:spinnerMode="dropdown" />
+
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="64.7dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect1"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/BtnBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="Book Table"
+                android:textColor="#fff"
+                android:textSize="15.3sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </me.didik.component.StickyNestedScrollView>
+
+</RelativeLayout>

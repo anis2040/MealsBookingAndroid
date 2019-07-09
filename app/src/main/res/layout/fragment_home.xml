@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    tools:context="com.esprit.booksmeals.fragment.HomeFragment">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drawer_layout"
+        >
+
+
+        <me.didik.component.StickyNestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/tool_bar"/>
+
+                <LinearLayout
+                    android:id="@+id/nearBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/food_curve_rect"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16.7dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15.3dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="28.3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14.3dp"
+                        android:layout_weight="1"
+                        android:text="Near by restaurants"
+                        android:textColor="#373737"
+                        android:textSize="16.7sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="21.3dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16.3dp"
+                        android:src="@drawable/ic_right_arrow"
+                        android:tint="#373737" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="12.3dp"
+                    android:background="@drawable/layout_bg"
+                    android:orientation="horizontal">
+
+
+                    <com.esprit.booksmeals.customfonts.OpenDay
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="You Might Like"
+                        android:textColor="#373737"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <com.esprit.booksmeals.customfonts.OpenDay
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="See All"
+                        android:textColor="#557ac7"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="12.3dp"
+                    android:background="@drawable/layout_bg"
+                    android:orientation="horizontal">
+
+
+                    <com.esprit.booksmeals.customfonts.OpenDay
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Top Ten"
+                        android:textColor="#373737"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <com.esprit.booksmeals.customfonts.OpenDay
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="See All"
+                        android:textColor="#557ac7"
+                        android:textSize="20sp"
+                        android:textStyle=""/>
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_top_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:divider="#fff"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_bg"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <com.esprit.booksmeals.customfonts.OpenDay
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="Cuisines"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="See all"
+                            android:textColor="#557ac7"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#fff"></android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpagerr"
+                    android:layout_width="match_parent"
+                    android:layout_height="188.3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="80dp"
+                    android:clipToPadding="false"
+                    android:paddingRight="22.3dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </me.didik.component.StickyNestedScrollView>
+        <include layout="@layout/activity_drawer"/>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

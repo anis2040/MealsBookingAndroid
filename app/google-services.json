@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "461903989048",
+    "firebase_url": "https://mealsbooking-65885.firebaseio.com",
+    "project_id": "mealsbooking-65885",
+    "storage_bucket": "mealsbooking-65885.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461903989048:android:5f5effb7b7e09111",
+        "android_client_info": {
+          "package_name": "com.example.anis.booksmeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461903989048-ppqhfouqnn8jbnff3cs68u8s9mepnpvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anis.booksmeals",
+            "certificate_hash": "7c3b3848187a1de0fe7755e8cb44c69fd29dcda0"
+          }
+        },
+        {
+          "client_id": "461903989048-i44otok81h6ehps6ekvgn5011o1ec3qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anis.booksmeals",
+            "certificate_hash": "254f9f07b768ba8d666e00ccfa5dbd0437a97542"
+          }
+        },
+        {
+          "client_id": "461903989048-h6r5f5e74qlj8nelgvnc1pmtkb7l0huo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrBbR3jaNKHQHQeQT2gxDTxuWJbc2wkNQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461903989048-h6r5f5e74qlj8nelgvnc1pmtkb7l0huo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
